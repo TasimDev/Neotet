@@ -1,12 +1,14 @@
 /*================GOOGLE FONTS================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
 /*=============== VARIABLES CSS ===============*/
 $padding: 1.5rem;
 $borderRadius: $padding+10rem;
+
 //objects with colors;
 $colors: (
     black: rgb(7, 7, 7),
+    text-black: rgb(0, 0, 0),
     grey: rgba(105, 105, 105, 0.884),
     white: #fff
 );
@@ -31,15 +33,15 @@ $mobile: 540px;
 :root {
 
     /*============Font and Typography*===============*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Raleway', sans-serif;
 
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --logo-font: 'Plus Jakarta Sans', sans-serif;
+    ;
+    --normal-font-size: 1rem;
+    --small-font-size: .6rem;
+    --smaller-font-size: .5rem;
 
-    @media screen and (min-width: 968px) {
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
-    }
+    /*============Transition*===============*/
+    --transition: all .3s cubic-bezier(0.95, 0.42, 0.12, 0.57);
+
 }

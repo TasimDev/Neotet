@@ -1,1 +1,19 @@
 /*=============== LAYOUT ===============*/
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 36px;
+    cursor: pointer;
+    border: 1px solid color(black);
+    border-radius: 2px;
+
+}

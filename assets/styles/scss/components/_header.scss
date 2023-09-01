@@ -1,0 +1,92 @@
+/*==============HEADER=============*/
+.header {
+    padding: 16px;
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__logo {
+        position: relative;
+        cursor: pointer;
+        color: color(text-black);
+        font-size: 1.6rem;
+        font-family: var(--logo-font);
+        overflow: hidden;
+        padding: 12px 0;
+        width: fit-content;
+
+        span {
+            font-weight: 800;
+            transition: var(--transition);
+        }
+
+        #logo {
+            position: absolute;
+            width: 50px;
+            transform: translateY(200%);
+            transition: var(--transition);
+        }
+
+        &:hover {
+            span {
+                transform: translateY(-200%);
+            }
+
+            #logo {
+                transform: translateY(0%);
+            }
+        }
+    }
+
+    &__menu {
+        gap: 3rem;
+
+        a {
+            color: color(text-black);
+            font-weight: 600;
+        }
+
+        li {
+
+            padding: 8px 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+
+            &::after {
+                content: '';
+                width: 0%;
+                height: 2px;
+                position: absolute;
+                background: color(black);
+                bottom: 0;
+                transition: var(--transition);
+            }
+
+            &:hover {
+
+                &::after {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+
+    &__button {
+        background: color(black);
+        color: color(white);
+        font-family: var(--body-font);
+        font-size: 1rem;
+        font-weight: 600;
+        transition: var(--transition);
+
+        &:hover {
+            background: color(white);
+            color: color(black);
+        }
+    }
+}

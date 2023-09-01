@@ -1,23 +1,16 @@
 /*================GOOGLE FONTS================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*============Font and Typography*===============*/
-  --body-font: "Poppins", sans-serif;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-}
-@media screen and (min-width: 968px) {
-  :root {
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
-}
-
-html {
-  font-size: 62.5%;
+  --body-font: "Raleway", sans-serif;
+  --logo-font: "Plus Jakarta Sans", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .6rem;
+  --smaller-font-size: .5rem;
+  /*============Transition*===============*/
+  --transition: all .3s cubic-bezier(0.95, 0.42, 0.12, 0.57);
 }
 
 * {
@@ -28,7 +21,6 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
   overflow-x: hidden;
@@ -36,7 +28,6 @@ body {
 
 a {
   text-decoration: none;
-  font-size: 1.6rem;
 }
 
 img {
@@ -46,6 +37,107 @@ img {
      object-fit: cover;
 }
 
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
 /*=============== LAYOUT ===============*/
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 36px;
+  cursor: pointer;
+  border: 1px solid rgb(7, 7, 7);
+  border-radius: 2px;
+}
+
+/*==============HEADER=============*/
+.header {
+  padding: 16px;
+}
+.header__container {
+  justify-content: space-between;
+}
+.header__logo {
+  position: relative;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+  font-family: var(--logo-font);
+  overflow: hidden;
+  padding: 12px 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header__logo span {
+  font-weight: 800;
+  transition: var(--transition);
+}
+.header__logo #logo {
+  position: absolute;
+  width: 50px;
+  transform: translateY(200%);
+  transition: var(--transition);
+}
+.header__logo:hover span {
+  transform: translateY(-200%);
+}
+.header__logo:hover #logo {
+  transform: translateY(0%);
+}
+.header__menu {
+  gap: 3rem;
+}
+.header__menu a {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.header__menu li {
+  padding: 8px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.header__menu li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  background: rgb(7, 7, 7);
+  bottom: 0;
+  transition: var(--transition);
+}
+.header__menu li:hover::after {
+  width: 100%;
+}
+.header__button {
+  background: rgb(7, 7, 7);
+  color: #fff;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.header__button:hover {
+  background: #fff;
+  color: rgb(7, 7, 7);
+}
+
 /*=================Animations=================*/
 /*=====================MediaQueries==================*//*# sourceMappingURL=style.css.map */
