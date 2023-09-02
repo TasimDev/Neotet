@@ -17,11 +17,11 @@
             <span class="line"></span>
         </div>
         <ul class="header__menu-mobile flex" id="header-menu">
-            <li><a href="#">Services </a></li>
-            <li><a href="#">Projects </a></li>
-            <li><a href="#">Process </a></li>
-            <li><a href="#">About us </a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" class="header_list-item">Services </a></li>
+            <li><a href="#" class="header_list-item">Projects </a></li>
+            <li><a href="#" class="header_list-item">Process </a></li>
+            <li><a href="#" class="header_list-item">About us </a></li>
+            <li><a href="#" class="header_list-item">Contact Us</a></li>
             <li class="social">
                 <p>Drop us a line </p>
                 <a href="mailto:neotet.co@gmail.com">neotet.co@gmail.com</a>
@@ -32,10 +32,18 @@
         let headerBtn = document.querySelector('#header-btn');
         let headerMenu = document.querySelector('#header-menu');
         let headerNav = document.querySelector('#header');
+        let headerListItem = document.querySelectorAll('.header_list-item');
         headerBtn.addEventListener('click', () => {
             headerMenu.classList.toggle('active');
             headerBtn.classList.toggle('active');
             headerNav.classList.toggle('active');
+        })
+        headerListItem.forEach((item) => {
+            item.addEventListener('click', () => {
+                headerMenu.classList.toggle('active');
+                headerBtn.classList.toggle('active');
+                headerNav.classList.toggle('active');
+            })
         })
     </script>
 </header>
