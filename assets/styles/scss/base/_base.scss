@@ -30,3 +30,8 @@ button {
     border: none;
     outline: none;
 }
+
+::selection {
+    color: color(white);
+    background: color(black);
+}
