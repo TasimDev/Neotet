@@ -59,6 +59,7 @@
     }
 
 
+
 }
 
 /* 
@@ -100,6 +101,15 @@
         &__socials {
             .socials {
                 width: 100%;
+            }
+        }
+    }
+
+    .home {
+        &__title {
+            h1 {
+                font-size: 2rem;
+                line-height: normal;
             }
         }
     }

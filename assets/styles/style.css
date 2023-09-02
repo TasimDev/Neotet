@@ -424,6 +424,10 @@ button {
   .footer__socials .socials {
     width: 100%;
   }
+  .home__title h1 {
+    font-size: 2rem;
+    line-height: normal;
+  }
 }
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
