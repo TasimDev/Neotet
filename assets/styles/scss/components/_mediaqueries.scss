@@ -27,6 +27,20 @@
         &__button-mobile {
             display: flex;
         }
+
+        &__menu-mobile {
+            display: flex;
+        }
+    }
+
+    .header.active {
+        background: color(black);
+
+        .header__logo {
+            span {
+                color: color(white);
+            }
+        }
     }
 }
 
@@ -49,7 +63,14 @@
 
         &__menu-mobile {
             top: 70px;
+
+            li.social {
+                margin-top: 5rem;
+
+
+            }
         }
+
     }
 }
 

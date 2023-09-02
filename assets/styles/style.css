@@ -173,7 +173,7 @@ button {
   background: rgb(17, 17, 17);
   top: 80px;
   right: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: start;
   padding: 6rem 0;
@@ -197,13 +197,6 @@ button {
 .header__menu-mobile.active {
   transform: translateY(0);
   opacity: 1;
-}
-
-.header.active {
-  background: rgb(17, 17, 17);
-}
-.header.active .header__logo span {
-  color: #fff;
 }
 
 /*==============HEADER=============*/
@@ -349,6 +342,15 @@ button {
   .header__button-mobile {
     display: flex;
   }
+  .header__menu-mobile {
+    display: flex;
+  }
+  .header.active {
+    background: rgb(17, 17, 17);
+  }
+  .header.active .header__logo span {
+    color: #fff;
+  }
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -363,6 +365,9 @@ button {
   }
   .header__menu-mobile {
     top: 70px;
+  }
+  .header__menu-mobile li.social {
+    margin-top: 5rem;
   }
 }
 /* 
