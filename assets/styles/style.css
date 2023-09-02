@@ -238,6 +238,65 @@ button {
   color: rgb(255, 196, 0);
 }
 
+.contact {
+  width: 100%;
+}
+.contact__container {
+  padding: 300px;
+}
+.contact__container .contant_us {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact__container .contant_us p {
+  color: gray;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 0.9em;
+}
+.contact__container .contant_us #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  width: 400px;
+}
+.contact__container .contant_us #form textarea {
+  padding: 20px;
+  font-size: 1.3em;
+  font-weight: 100;
+  outline: none;
+  resize: none;
+}
+.contact__container .contant_us #form label {
+  color: gray;
+  text-transform: uppercase;
+  padding-bottom: 1ch;
+  padding-top: 15px;
+  font-size: 0.9em;
+}
+.contact__container .contant_us #form input {
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: 100;
+  outline: none;
+}
+.contact__container .contant_us #form button {
+  font-size: 1.5em;
+  background-color: rgb(17, 17, 17);
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 50px;
+  transition: var(--transition);
+}
+.contact__container .contant_us #form button:hover {
+  background: #fff;
+  color: rgb(17, 17, 17);
+  border: 1px solid black;
+}
+
 /*==============HEADER=============*/
 .footer {
   background: rgb(17, 17, 17);

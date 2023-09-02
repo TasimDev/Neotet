@@ -1,0 +1,70 @@
+.contact {
+    width: 100%;
+    
+    &__container {
+        padding: 300px;  
+        
+        .contant_us{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        p{
+            color: gray;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            font-size: .9em;
+        }
+        
+        #form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 50px;
+            width: 400px;
+
+            textarea{
+                padding: 20px;
+                font-size: 1.3em;
+                font-weight: 100;
+                outline: none;
+                resize: none;
+            }
+
+            label {
+                color: gray;
+                text-transform: uppercase;
+                padding-bottom: 1ch;
+                padding-top: 15px;
+                font-size: .9em;
+            }
+
+            input {
+                padding: 10px;
+                font-size: 1.3em;
+                font-weight: 100;
+                outline: none;
+            }
+
+
+            button{
+                font-size: 1.5em;
+                background-color: color(black);
+                color: color(white);
+                padding: 15px;
+                cursor: pointer;
+                margin-top: 50px;
+                transition: var(--transition);
+                 &:hover{
+                    background: color(white);
+                    color: color(black);
+                    border: 1px solid black;
+                 }
+            }
+            
+        }
+    }
+    }
+
+  
+}
