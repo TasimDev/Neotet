@@ -424,6 +424,10 @@ button {
   .footer__socials .socials {
     width: 100%;
   }
+  .footer__socials .socials li {
+    width: 40px;
+    height: 40px;
+  }
   .home__title h1 {
     font-size: 2rem;
     line-height: normal;
