@@ -332,6 +332,13 @@ button {
   }
   .header__logo #logo {
     width: 45px;
+    transform: translateY(200%);
+  }
+  .header__logo:hover span {
+    transform: none;
+  }
+  .header__logo:hover #logo {
+    transform: translateY(200%);
   }
   .header__menu {
     display: none;

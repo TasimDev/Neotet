@@ -13,7 +13,21 @@
 
             #logo {
                 width: 45px;
+                transform: translateY(200%);
             }
+
+            &:hover {
+                span {
+                    transform: none;
+                }
+
+                #logo {
+                    transform: translateY(200%);
+                }
+
+            }
+
+
         }
 
         &__menu {
