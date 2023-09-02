@@ -1,15 +1,41 @@
-<header class="header">
+<header class="header" id="header">
     <div class="container header__container flex">
         <a href="../index.html" class="header__logo flex">
             <img src="../assets/images/logo/neotet-logo.png" alt="neotet/logo" id="logo">
             <span>NEOTET</span>
         </a>
         <ul class="header__menu flex">
-            <li><a href="#">Services <span><img src="./assets/images/green-brush.png" alt=""></span></a></li>
-            <li><a href="#">Projects <span><img src="./assets/images/red-brush.png" alt=""></span></a></li>
-            <li><a href="#">Process <span><img src="./assets/images/yellow-brush.png" alt=""></span></a></li>
-            <li><a href="#">About us <span><img src="./assets/images/yellow-brush.png" alt=""></span></a></li>
+            <li><a href="#">Services </a></li>
+            <li><a href="#">Projects </a></li>
+            <li><a href="#">Process </a></li>
+            <li><a href="#">About us</a></li>
         </ul>
         <button class="btn header__button">Contact Us</button>
+        <!--Mobile and Tablet Media-->
+        <div class="header__button-mobile" id="header-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <ul class="header__menu-mobile flex" id="header-menu">
+            <li><a href="#">Services </a></li>
+            <li><a href="#">Projects </a></li>
+            <li><a href="#">Process </a></li>
+            <li><a href="#">About us </a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="social">
+                <p>Drop us a line </p>
+                <a href="mailto:neotet.co@gmail.com">neotet.co@gmail.com</a>
+            </li>
+        </ul>
     </div>
+    <script>
+        let headerBtn = document.querySelector('#header-btn');
+        let headerMenu = document.querySelector('#header-menu');
+        let headerNav = document.querySelector('#header');
+        headerBtn.addEventListener('click', () => {
+            headerMenu.classList.toggle('active');
+            headerBtn.classList.toggle('active');
+            headerNav.classList.toggle('active');
+        })
+    </script>
 </header>

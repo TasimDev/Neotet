@@ -7,10 +7,11 @@ $borderRadius: $padding+10rem;
 
 //objects with colors;
 $colors: (
-    black: rgb(7, 7, 7),
+    black: rgb(17, 17, 17),
     text-black: rgb(0, 0, 0),
     grey: rgba(105, 105, 105, 0.884),
-    white: #fff
+    white: #fff,
+    text-gray: rgb(128, 128, 128)
 );
 
 

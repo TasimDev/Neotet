@@ -1,1 +1,61 @@
 /*=====================MediaQueries==================*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1200px) {
+    .header {
+        &__logo {
+            span {
+                font-size: 1.2rem;
+            }
+
+            #logo {
+                width: 45px;
+            }
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__button-mobile {
+            display: flex;
+        }
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (max-width: 481px) {
+    .header {
+        &__logo {
+            span {
+                font-size: 1rem;
+            }
+
+            #logo {
+                width: 40px;
+            }
+        }
+
+        &__menu-mobile {
+            top: 70px;
+        }
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) {}

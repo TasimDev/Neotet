@@ -10,3 +10,5 @@ fetch('components/footer.html')
         // Inject the HTML content into the container
         $('Footer').html(data);
     });
+
+
