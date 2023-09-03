@@ -349,6 +349,49 @@ button {
   top: -25%;
   right: 0;
 }
+.proccess__proccesing {
+  padding: 16rem 0;
+}
+.proccess__proccesing .container {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  width: 60%;
+}
+.proccess__proccesing .container .phase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.253);
+}
+.proccess__proccesing .container .phase:last-child {
+  border-bottom: none;
+}
+.proccess__proccesing .container .phase .number {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  font-weight: 200;
+}
+.proccess__proccesing .container .phase .number svg {
+  width: 100%;
+}
+.proccess__proccesing .container .phase .text {
+  width: 55%;
+}
+.proccess__proccesing .container .phase .text .title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.proccess__proccesing .container .phase .text p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
 
 /*==============HEADER=============*/
 .footer {
@@ -511,6 +554,15 @@ button {
   .header.active .header__logo span {
     color: #fff;
   }
+  .proccess__proccesing .container {
+    width: 86%;
+  }
+  .proccess__proccesing .container .phase .number {
+    width: 20%;
+  }
+  .proccess__proccesing .container .phase .text {
+    width: 70%;
+  }
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -543,6 +595,41 @@ button {
   .home__title h1 {
     font-size: 2rem;
     line-height: normal;
+  }
+  .proccess__about {
+    padding-bottom: 13px;
+  }
+  .proccess__about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .proccess__about .container .title {
+    width: 100%;
+  }
+  .proccess__about .container .image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+  .proccess__proccesing .container .phase {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .proccess__proccesing .container .phase .number {
+    width: 40%;
+  }
+  .proccess__proccesing .container .phase .text {
+    width: 100%;
+  }
+  .proccess__proccesing .container .phase .text .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .proccess__proccesing .container .phase .text p {
+    text-align: justify;
   }
 }
 /* 
