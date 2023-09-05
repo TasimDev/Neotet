@@ -2,15 +2,16 @@
     width: 100%;
     
     &__container {
-        padding: 12rem 0rem 0rem;  
+        padding: 12rem 0rem 25rem 0rem;  
         
         .contant_us{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
         
         p{
-            color: gray;
+            color: rgb(156, 156, 156);
             text-transform: uppercase;
             padding-bottom: 20px;
             font-size: .9em;
@@ -23,15 +24,21 @@
             flex-direction: column;
             justify-content: center;
             margin-top: 50px;
-            width: 400px;
-            
-
+            width: 500px;
+            z-index: 3;
+            background-color: color(black);
+            padding: 20px;
+            border-radius: 15px;
+            position: relative;
             textarea{
                 padding: 20px;
                 font-size: 1.3em;
                 font-weight: 100;
                 outline: none;
                 resize: none;
+                background: none;
+                color: white;
+                font-style: italic;
             }
 
             label {
@@ -47,6 +54,9 @@
                 font-size: 1.3em;
                 font-weight: 100;
                 outline: none;
+                background-color: color(black);
+                border: 1px solid gray;
+                color: color(white);
             }
 
 
@@ -56,7 +66,9 @@
                 color: color(white);
                 padding: 15px;
                 cursor: pointer;
-                margin-top: 50px;
+                margin-top: 50px ;
+                margin-bottom: 20px;
+                border: 1px solid gray;
                 transition: var(--transition);
                  &:hover{
                     background: color(white);
@@ -70,11 +82,23 @@
             }
             
         }
+
+        #form::after{
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 30px;
+            height: 30px;
+            background-color: red($color: #000000);
+        }
        
     }
 
     .map {
-        z-index: -1;
+        position: absolute;
+        bottom: -425px;
+        z-index: 2;
         -webkit-filter: grayscale(100%);
            -moz-filter: grayscale(100%);
             -ms-filter: grayscale(100%);
