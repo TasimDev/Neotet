@@ -252,7 +252,7 @@ button {
   width: 100%;
 }
 .contact__container {
-  padding: 300px;
+  padding: 12rem 0rem;
 }
 .contact__container .contant_us {
   display: flex;
