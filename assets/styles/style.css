@@ -252,7 +252,7 @@ button {
   width: 100%;
 }
 .contact__container {
-  padding: 12rem 0rem;
+  padding: 12rem 0rem 0rem;
 }
 .contact__container .contant_us {
   display: flex;
@@ -305,6 +305,13 @@ button {
   background: #fff;
   color: rgb(17, 17, 17);
   border: 1px solid black;
+}
+.contact__container .map {
+  z-index: -1;
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 /*==============Proccess================*/
