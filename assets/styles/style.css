@@ -252,7 +252,8 @@ button {
   width: 100%;
 }
 .contact__container {
-  padding: 12rem 0rem 25rem 0rem;
+  position: relative;
+  padding: 12rem 0rem;
 }
 .contact__container .contant_us {
   display: flex;
@@ -271,6 +272,7 @@ button {
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 10%;
   width: 500px;
   z-index: 3;
   background-color: rgb(17, 17, 17);
@@ -320,18 +322,9 @@ button {
   color: rgb(17, 17, 17);
   border: 1px solid black;
 }
-.contact__container .contant_us #form::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 30px;
-  height: 30px;
-  background-color: 0;
-}
 .contact__container .map {
   position: absolute;
-  bottom: -425px;
+  bottom: 0px;
   z-index: 2;
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -430,6 +423,8 @@ button {
   background: rgb(17, 17, 17);
   color: rgb(128, 128, 128);
   padding-top: 4rem;
+  position: absolute;
+  width: 100%;
 }
 .footer__container {
   display: flex;

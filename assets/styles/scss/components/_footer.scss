@@ -3,7 +3,8 @@
     background: color(black);
     color: color(text-gray);
     padding-top: 4rem;
-   
+    position: absolute;
+    width: 100%;
     &__container {
         display: flex;
         flex-direction: column;
