@@ -252,15 +252,17 @@ button {
   width: 100%;
 }
 .contact__container {
-  padding: 12rem 0rem 0rem;
+  position: relative;
+  padding: 12rem 0rem;
 }
 .contact__container .contant_us {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 .contact__container .contant_us p {
-  color: gray;
+  color: rgb(156, 156, 156);
   text-transform: uppercase;
   padding-bottom: 20px;
   font-size: 0.9em;
@@ -270,7 +272,13 @@ button {
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
-  width: 400px;
+  margin-bottom: 10%;
+  width: 500px;
+  z-index: 3;
+  background-color: rgb(17, 17, 17);
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
 }
 .contact__container .contant_us #form textarea {
   padding: 20px;
@@ -278,6 +286,9 @@ button {
   font-weight: 100;
   outline: none;
   resize: none;
+  background: none;
+  color: white;
+  font-style: italic;
 }
 .contact__container .contant_us #form label {
   color: gray;
@@ -291,6 +302,9 @@ button {
   font-size: 1.3em;
   font-weight: 100;
   outline: none;
+  background-color: rgb(17, 17, 17);
+  border: 1px solid gray;
+  color: #fff;
 }
 .contact__container .contant_us #form button {
   font-size: 1.5em;
@@ -299,6 +313,8 @@ button {
   padding: 15px;
   cursor: pointer;
   margin-top: 50px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
   transition: var(--transition);
 }
 .contact__container .contant_us #form button:hover {
@@ -307,7 +323,9 @@ button {
   border: 1px solid black;
 }
 .contact__container .map {
-  z-index: -1;
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
@@ -405,6 +423,8 @@ button {
   background: rgb(17, 17, 17);
   color: rgb(128, 128, 128);
   padding-top: 4rem;
+  position: absolute;
+  width: 100%;
 }
 .footer__container {
   display: flex;

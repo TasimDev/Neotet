@@ -1,21 +1,64 @@
 .contact {
     width: 100%;
+<<<<<<< HEAD
 
     &__container {
         padding: 12rem 0rem 0rem;
+=======
+    &__container {
+        position: relative;
+        padding: 12rem 0rem;
+
+        .contant_us{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p{
+            color: rgb(156, 156, 156);
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            font-size: .9em;
+        }
+>>>>>>> 126e327af4feb15b5c1110f7463df57e84805ecc
 
         .contant_us {
             display: flex;
             justify-content: center;
+<<<<<<< HEAD
             flex-direction: column;
 
             p {
+=======
+            margin-top: 50px ;
+            margin-bottom: 10%;
+            width: 500px;
+            z-index: 3;
+            background-color: color(black);
+            padding: 20px;
+            border-radius: 15px;
+            position: relative;
+            textarea{
+                padding: 20px;
+                font-size: 1.3em;
+                font-weight: 100;
+                outline: none;
+                resize: none;
+                background: none;
+                color: white;
+                font-style: italic;
+            }
+
+
+            label {
+>>>>>>> 126e327af4feb15b5c1110f7463df57e84805ecc
                 color: gray;
                 text-transform: uppercase;
                 padding-bottom: 20px;
                 font-size: .9em;
             }
 
+<<<<<<< HEAD
 
 
             #form {
@@ -24,6 +67,34 @@
                 justify-content: center;
                 margin-top: 50px;
                 width: 400px;
+=======
+            input {
+                padding: 10px;
+                font-size: 1.3em;
+                font-weight: 100;
+                outline: none;
+                background-color: color(black);
+                border: 1px solid gray;
+                color: color(white);
+            }
+
+
+            button{
+                font-size: 1.5em;
+                background-color: color(black);
+                color: color(white);
+                padding: 15px;
+                cursor: pointer;
+                margin-top: 50px ;
+                margin-bottom: 20px;
+                border: 1px solid gray;
+                transition: var(--transition);
+                 &:hover{
+                    background: color(white);
+                    color: color(black);
+                    border: 1px solid black;
+                 }
+>>>>>>> 126e327af4feb15b5c1110f7463df57e84805ecc
 
 
                 textarea {
@@ -73,11 +144,24 @@
             }
 
         }
+<<<<<<< HEAD
 
         .map {
             z-index: -1;
             -webkit-filter: grayscale(100%);
             -moz-filter: grayscale(100%);
+=======
+
+       
+    }
+
+    .map {
+        position: absolute;
+        bottom: 0px;
+        z-index: 2;
+        -webkit-filter: grayscale(100%);
+           -moz-filter: grayscale(100%);
+>>>>>>> 126e327af4feb15b5c1110f7463df57e84805ecc
             -ms-filter: grayscale(100%);
             -o-filter: grayscale(100%);
             filter: grayscale(100%);
