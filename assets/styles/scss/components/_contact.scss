@@ -1,13 +1,10 @@
 .contact {
     width: 100%;
-<<<<<<< HEAD
+
 
     &__container {
-        padding: 12rem 0rem 0rem;
-=======
-    &__container {
         position: relative;
-        padding: 12rem 0rem;
+        padding: 12rem 0rem 0rem;
 
         .contant_us{
         display: flex;
@@ -20,16 +17,16 @@
             padding-bottom: 20px;
             font-size: .9em;
         }
->>>>>>> 126e327af4feb15b5c1110f7463df57e84805ecc
+
 
         .contant_us {
             display: flex;
             justify-content: center;
-<<<<<<< HEAD
+
             flex-direction: column;
 
             p {
-=======
+
             margin-top: 50px ;
             margin-bottom: 10%;
             width: 500px;
@@ -51,14 +48,13 @@
 
 
             label {
->>>>>>> 126e327af4feb15b5c1110f7463df57e84805ecc
                 color: gray;
                 text-transform: uppercase;
                 padding-bottom: 20px;
                 font-size: .9em;
             }
 
-<<<<<<< HEAD
+
 
 
             #form {
@@ -67,7 +63,7 @@
                 justify-content: center;
                 margin-top: 50px;
                 width: 400px;
-=======
+
             input {
                 padding: 10px;
                 font-size: 1.3em;
@@ -94,7 +90,7 @@
                     color: color(black);
                     border: 1px solid black;
                  }
->>>>>>> 126e327af4feb15b5c1110f7463df57e84805ecc
+
 
 
                 textarea {
@@ -144,13 +140,6 @@
             }
 
         }
-<<<<<<< HEAD
-
-        .map {
-            z-index: -1;
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-=======
 
        
     }
@@ -161,12 +150,13 @@
         z-index: 2;
         -webkit-filter: grayscale(100%);
            -moz-filter: grayscale(100%);
->>>>>>> 126e327af4feb15b5c1110f7463df57e84805ecc
             -ms-filter: grayscale(100%);
             -o-filter: grayscale(100%);
             filter: grayscale(100%);
         }
+
+
+}
+        }
     }
-
-
 }
