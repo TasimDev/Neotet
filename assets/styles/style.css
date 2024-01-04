@@ -228,8 +228,11 @@ button {
   position: relative;
 }
 .home__title {
-  width: 100%;
+  width: 50%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .home__title h1 {
   font-size: 3rem;
@@ -237,15 +240,30 @@ button {
   line-height: 4rem;
   margin-bottom: 16px;
 }
-.home__title h1 .thin {
-  font-weight: 200;
+.home__title h1 span {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: black;
+  color: #ffffff;
+  border-radius: 50px;
 }
 .home__title .text-gray {
   font-size: 1.3rem;
   color: rgba(105, 105, 105, 0.884);
 }
-.home__title .stars i {
-  color: rgb(255, 196, 0);
+.home__title p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+#image {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .contact {
@@ -253,7 +271,7 @@ button {
 }
 .contact__container {
   position: relative;
-  padding: 12rem 0rem;
+  padding: 12rem 0rem 0rem;
 }
 .contact__container .contant_us {
   display: flex;
@@ -267,10 +285,12 @@ button {
   padding-bottom: 20px;
   font-size: 0.9em;
 }
-.contact__container .contant_us #form {
+.contact__container .contant_us .contant_us {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
+}
+.contact__container .contant_us .contant_us p {
   margin-top: 50px;
   margin-bottom: 10%;
   width: 500px;
@@ -280,7 +300,7 @@ button {
   border-radius: 15px;
   position: relative;
 }
-.contact__container .contant_us #form textarea {
+.contact__container .contant_us .contant_us p textarea {
   padding: 20px;
   font-size: 1.3em;
   font-weight: 100;
@@ -290,14 +310,20 @@ button {
   color: white;
   font-style: italic;
 }
-.contact__container .contant_us #form label {
+.contact__container .contant_us .contant_us p label {
   color: gray;
   text-transform: uppercase;
-  padding-bottom: 1ch;
-  padding-top: 15px;
+  padding-bottom: 20px;
   font-size: 0.9em;
 }
-.contact__container .contant_us #form input {
+.contact__container .contant_us .contant_us p #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  width: 400px;
+}
+.contact__container .contant_us .contant_us p #form input {
   padding: 10px;
   font-size: 1.3em;
   font-weight: 100;
@@ -306,7 +332,7 @@ button {
   border: 1px solid gray;
   color: #fff;
 }
-.contact__container .contant_us #form button {
+.contact__container .contant_us .contant_us p #form button {
   font-size: 1.5em;
   background-color: rgb(17, 17, 17);
   color: #fff;
@@ -317,12 +343,46 @@ button {
   border: 1px solid gray;
   transition: var(--transition);
 }
-.contact__container .contant_us #form button:hover {
+.contact__container .contant_us .contant_us p #form button:hover {
   background: #fff;
   color: rgb(17, 17, 17);
   border: 1px solid black;
 }
-.contact__container .map {
+.contact__container .contant_us .contant_us p #form button textarea {
+  padding: 20px;
+  font-size: 1.3em;
+  font-weight: 100;
+  outline: none;
+  resize: none;
+}
+.contact__container .contant_us .contant_us p #form button label {
+  color: gray;
+  text-transform: uppercase;
+  padding-bottom: 1ch;
+  padding-top: 15px;
+  font-size: 0.9em;
+}
+.contact__container .contant_us .contant_us p #form button input {
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: 100;
+  outline: none;
+}
+.contact__container .contant_us .contant_us p #form button button {
+  font-size: 1.5em;
+  background-color: rgb(17, 17, 17);
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 50px;
+  transition: var(--transition);
+}
+.contact__container .contant_us .contant_us p #form button button:hover {
+  background: #fff;
+  color: rgb(17, 17, 17);
+  border: 1px solid black;
+}
+.contact__container .contant_us .contant_us .map {
   position: absolute;
   bottom: 0px;
   z-index: 2;
@@ -581,6 +641,9 @@ button {
   .header.active .header__logo span {
     color: #fff;
   }
+  .home__title {
+    width: 90%;
+  }
   .proccess__proccesing .container {
     width: 86%;
   }
@@ -589,6 +652,20 @@ button {
   }
   .proccess__proccesing .container .phase .text {
     width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home__title {
+    width: 90%;
+  }
+  .home__title h1 {
+    font-size: 2.5rem;
+  }
+  .home__title p {
+    font-size: 1.3rem;
+  }
+  .home__title .text-gray {
+    font-size: 1.1rem;
   }
 }
 /* 

@@ -4,10 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="icon" href="./assets/images/logo/neotet-logo-title.png" type="logo/icon type">
-    <title>Your New Generation Web Agancy</title>
+    <meta name="description"
+        content="We make new generation web products to determine the future">
+    <meta name="keywords" content="New Generation Web Products, Web Design and Development, Online Marketing, Digital Marketing, Social Media Marketing, Digital Art">
+    <meta name="author" content="Neotet">
+    <meta name="generator" content="Neotet">
+
+    <meta property="og:title" content="NEOTET - Digital Creative Agency">
+    <meta property="og:description"
+        content="We make new generation web products to determine the future.">
+    <meta property="og:url" content="http://neotet.com/">
+    <meta property="og:type" content="website">
+
+   
+    <link rel="canonical" href="http://neotet.com/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>NEOTET | Digital Creative Agency</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -43,44 +62,7 @@
                 </li>
             </ul>
         </div>
-        <script>
-            let headerBtn = document.querySelector('#header-btn');
-            let headerMenu = document.querySelector('#header-menu');
-            let headerNav = document.querySelector('#header');
-            let headerListItem = document.querySelectorAll('.header_list-item');
-
-            headerBtn.addEventListener('click', () => {
-                headerMenu.classList.toggle('active');
-                headerBtn.classList.toggle('active');
-                headerNav.classList.toggle('active');
-            })
-            headerListItem.forEach((item) => {
-                item.addEventListener('click', () => {
-                    headerMenu.classList.toggle('active');
-                    headerBtn.classList.toggle('active');
-                    headerNav.classList.toggle('active');
-                })
-            })
-
-            let lastScrollTop = 0;
-
-            window.addEventListener("scroll", () => {
-                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                let width = window.innerWidth;
-                if (width > '1200') {
-                    if (scrollTop > lastScrollTop) {
-                        headerNav.style.top = '-90px';
-
-                    } else {
-                        headerNav.style.top = '0';
-                    }
-                    lastScrollTop = scrollTop;
-                } else {
-                    headerNav.style.top = 0;
-                }
-
-            })
-        </script>
+        
     </header>
     
     <footer class="footer">

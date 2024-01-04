@@ -58,6 +58,11 @@
         }
     }
 
+    .home {
+        &__title {
+            width: 90%;
+        }
+    }
     .proccess {
         &__proccesing {
             .container {
@@ -79,7 +84,22 @@
 
 
 }
-
+@media screen and (max-width: 600px) {
+    .home {
+        &__title {
+            width:90%;
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+            .text-gray{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
