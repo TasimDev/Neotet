@@ -22,9 +22,9 @@ let lastScrollTop = 0;
 window.addEventListener("scroll", () => {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   let width = window.innerWidth;
-  if (width > '1200') {
-    if (scrollTop > lastScrollTop) {
-      headerNav.style.top = '-90px';
+  if (width > '900') {
+    if (scrollTop >= lastScrollTop) {
+      headerNav.style.top = '-100px';
 
     } else {
       headerNav.style.top = '0';

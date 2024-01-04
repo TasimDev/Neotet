@@ -240,13 +240,6 @@ button {
   line-height: 4rem;
   margin-bottom: 16px;
 }
-.home__title h1 span {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background: black;
-  color: #ffffff;
-  border-radius: 50px;
-}
 .home__title .text-gray {
   font-size: 1.3rem;
   color: rgba(105, 105, 105, 0.884);
