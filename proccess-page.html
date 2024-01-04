@@ -12,7 +12,75 @@
 </head>
 
 <body>
-    <Navbar></Navbar>
+    <header class="header" id="header">
+        <div class="container header__container flex">
+            <a href="../index.html" class="header__logo flex">
+                <img src="../assets/images/logo/neotet-logo.png" alt="neotet/logo" id="logo">
+                <span>NEOTET</span>
+            </a>
+            <ul class="header__menu flex">
+                <li><a href="#">Services </a></li>
+                <li><a href="#">Projects </a></li>
+                <li><a href="../proccess-page.html">Process </a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+            <button class="btn header__button" onclick="window.location.href='../contact-page.html'">Contact Us</button>
+            <!--Mobile and Tablet Media-->
+            <div class="header__button-mobile" id="header-btn">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <ul class="header__menu-mobile flex" id="header-menu">
+                <li><a href="#" class="header_list-item">Services </a></li>
+                <li><a href="#" class="header_list-item">Projects </a></li>
+                <li><a href="../proccess-page.html" class="header_list-item">Process </a></li>
+                <li><a href="#" class="header_list-item">About us </a></li>
+                <li><a href="../contact-page.html" class="header_list-item">Contact Us</a></li>
+                <li class="social">
+                    <p>Drop us a line </p>
+                    <a href="mailto:neotet.co@gmail.com">neotet.co@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            let headerBtn = document.querySelector('#header-btn');
+            let headerMenu = document.querySelector('#header-menu');
+            let headerNav = document.querySelector('#header');
+            let headerListItem = document.querySelectorAll('.header_list-item');
+
+            headerBtn.addEventListener('click', () => {
+                headerMenu.classList.toggle('active');
+                headerBtn.classList.toggle('active');
+                headerNav.classList.toggle('active');
+            })
+            headerListItem.forEach((item) => {
+                item.addEventListener('click', () => {
+                    headerMenu.classList.toggle('active');
+                    headerBtn.classList.toggle('active');
+                    headerNav.classList.toggle('active');
+                })
+            })
+
+            let lastScrollTop = 0;
+
+            window.addEventListener("scroll", () => {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                let width = window.innerWidth;
+                if (width > '1200') {
+                    if (scrollTop > lastScrollTop) {
+                        headerNav.style.top = '-90px';
+
+                    } else {
+                        headerNav.style.top = '0';
+                    }
+                    lastScrollTop = scrollTop;
+                } else {
+                    headerNav.style.top = 0;
+                }
+
+            })
+        </script>
+    </header>
     <section class="proccess">
 
         <div class="proccess__title container proccess__container">
@@ -106,7 +174,36 @@
             </div>
         </div>
     </section>
-    <Footer></Footer>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__top">
+                <span>Are you ready?</span>
+                <div class="title">Let's start</div>
+            </div>
+            <div class="footer__center">
+                <ul class="footer-list">
+                    <li class="email">
+                        <a href="mailto:neotet.co@gmail.com">neotet.co@gmail.com</a>
+                    </li>
+                    <li class="quote">
+                        <a href="#">Get a quote</a>
+                    </li>
+                    <li class="place">
+                        <p>Ruse, Ruse, Bulgaria 7000</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__socials">
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/js/index-page.js"></script>
 </body>
