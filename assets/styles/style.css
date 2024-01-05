@@ -118,7 +118,7 @@ button {
 
 /*==============HEADER=============*/
 .header {
-  padding: 16px;
+  padding: 16px 0px;
   width: 100%;
   height: auto;
   background: transparent;
@@ -300,6 +300,7 @@ button {
   line-height: 4rem;
   margin-bottom: 16px;
   font-family: var(--header-font);
+  color: rgb(17, 17, 17);
 }
 .home__title p {
   font-size: 2rem;
@@ -348,7 +349,7 @@ button {
 }
 #about .container a {
   color: #fff;
-  background: black;
+  background: rgb(17, 17, 17);
 }
 
 .contact {

@@ -17,6 +17,7 @@
             line-height: 4rem;
             margin-bottom: 16px;
            font-family: var(--header-font);
+           color: color(black);
            
         }
 
@@ -66,8 +67,8 @@
             word-spacing: .2rem;
         }
         a{
-            color: #fff;
-            background: black;
+            color: color(white);
+            background: color(black);
         }
       
     }

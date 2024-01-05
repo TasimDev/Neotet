@@ -1,6 +1,6 @@
 /*==============HEADER=============*/
 .header {
-    padding: 16px;
+    padding: 16px 0px;
     width: 100%;
     height: auto;
     background: transparent;
@@ -11,14 +11,12 @@
 
     &.sticky{
         background: color(black);
-       
-
         .header__logo{
-            color: #fff;
+            color: color(white);
         }
         .header__menu {
             a{
-                color: #fff;
+                color: color(white);
             }
             li{
                 &::after{
@@ -27,7 +25,7 @@
             }
         }
         .header__button{
-            background: #fff;
+            background: color(white);
             color: color(black);
             
             &:hover{
