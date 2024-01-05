@@ -290,6 +290,7 @@ button {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../../../images/Home6.png);
 }
 
 .text-gray {
