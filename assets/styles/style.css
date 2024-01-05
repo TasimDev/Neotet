@@ -1,10 +1,12 @@
 /*================GOOGLE FONTS================*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*============Font and Typography*===============*/
-  --body-font: "Raleway", sans-serif;
+  --header-font: "Raleway", sans-serif;
+  --body-font: "Nunito Sans", sans-serif;
   --logo-font: "Plus Jakarta Sans", sans-serif;
   --normal-font-size: 1rem;
   --small-font-size: .6rem;
@@ -59,7 +61,7 @@ button {
 
 /*=============== LAYOUT ===============*/
 .container {
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -71,10 +73,10 @@ button {
 }
 
 .btn {
-  padding: 12px 36px;
+  padding: 10px 30px;
   cursor: pointer;
   border: 1px solid rgb(17, 17, 17);
-  border-radius: 2px;
+  border-radius: 60px;
 }
 
 #bg_stars {
@@ -85,12 +87,41 @@ button {
   z-index: -1;
 }
 
+.neotet {
+  display: inline-block;
+  padding: 6px 32px;
+  background: rgb(149, 255, 124);
+  background: linear-gradient(180deg, rgb(149, 255, 124) 0%, rgb(240, 241, 0) 100%);
+  border: 2px solid black;
+  border-radius: 60px;
+  text-transform: uppercase;
+  position: relative;
+}
+.neotet .fa-star {
+  position: absolute;
+  font-size: 1.2rem;
+}
+.neotet .fa-star.star-1 {
+  right: -10px;
+  bottom: -12px;
+}
+.neotet .fa-star.star-2 {
+  top: -12px;
+  left: -10px;
+  transform: rotate(30deg) scale(0.8);
+}
+.neotet .fa-star.star-3 {
+  left: -12px;
+  bottom: -5px;
+  transform: rotate(45deg) scale(1);
+}
+
 /*==============HEADER=============*/
 .header {
   padding: 16px;
   width: 100%;
   height: auto;
-  background: #fff;
+  background: transparent;
   position: fixed;
   top: 0;
   transition: var(--transition);
@@ -127,12 +158,17 @@ button {
 .header__logo:hover #logo {
   transform: translateY(0%);
 }
+.header .div {
+  display: flex;
+  gap: 3rem;
+}
 .header__menu {
   gap: 3rem;
 }
 .header__menu a {
   color: rgb(0, 0, 0);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1rem;
 }
 .header__menu li {
   padding: 8px 3px;
@@ -226,10 +262,10 @@ button {
   width: 100%;
   height: 100vh;
   position: relative;
+  text-align: left;
 }
 .home__title {
-  width: 50%;
-  text-align: center;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,24 +275,55 @@ button {
   font-weight: 800;
   line-height: 4rem;
   margin-bottom: 16px;
-}
-.home__title .text-gray {
-  font-size: 1.3rem;
-  color: rgba(105, 105, 105, 0.884);
+  font-family: var(--header-font);
 }
 .home__title p {
   font-size: 2rem;
-  text-align: center;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  color: rgba(0, 0, 0, 0.815);
+  color: rgba(0, 0, 0, 0.781);
+  font-weight: 300;
 }
 
 #image {
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
+}
+
+.text-gray {
+  font-size: 1.3rem;
+  color: rgba(105, 105, 105, 0.884);
+  font-family: var(--header-font);
+}
+
+#about {
+  width: 100%;
+  height: 60vh;
+  background: #FBFBFB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+#about .container p {
+  font-size: 2rem;
+  width: 60%;
+  line-height: 3.3rem;
+  font-weight: 600;
+  word-spacing: 0.2rem;
+}
+#about .container a {
+  color: #fff;
+  background: black;
 }
 
 .contact {
@@ -645,6 +712,16 @@ button {
   }
   .proccess__proccesing .container .phase .text {
     width: 70%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #about .container p {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
+  #about .container .neotet {
+    padding: 2px 18px;
   }
 }
 @media screen and (max-width: 600px) {

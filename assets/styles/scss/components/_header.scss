@@ -3,7 +3,7 @@
     padding: 16px;
     width: 100%;
     height: auto;
-    background: color(white);
+    background: transparent;
     position: fixed;
     top: 0;
     transition: var(--transition);
@@ -45,13 +45,17 @@
             }
         }
     }
-
+ .div{
+    display: flex;
+    gap: 3rem;
+}
     &__menu {
         gap: 3rem;
-
+      
         a {
             color: color(text-black);
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1rem;
         }
 
         li {
@@ -61,7 +65,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
-
+        
 
             &::after {
                 content: '';

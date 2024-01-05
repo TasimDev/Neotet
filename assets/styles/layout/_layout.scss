@@ -1,6 +1,6 @@
 /*=============== LAYOUT ===============*/
 .container {
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -12,11 +12,10 @@
 }
 
 .btn {
-    padding: 12px 36px;
+    padding: 10px 30px;
     cursor: pointer;
     border: 1px solid color(black);
-    border-radius: 2px;
-
+    border-radius: 60px;
 }
 
 
@@ -27,4 +26,33 @@
     background-position: center;
     z-index: -1;
 }
+.neotet{
+    display: inline-block;
+    padding: 6px 32px;
+    background: rgb(149,255,124);
+    background: linear-gradient(180deg, rgba(149,255,124,1) 0%, rgba(240,241,0,1) 100%);
+    border: 2px solid black;
+    border-radius: 60px;
+    text-transform: uppercase;
+    position: relative;
+    .fa-star{
+        position: absolute;
+        font-size: 1.2rem;
+        &.star-1{
+            right: -10px;
+            bottom: -12px;
+        }
+        &.star-2{
+            top: -12px;
+            left: -10px;
+            transform: rotate(30deg) scale(0.8);
+        }
+        &.star-3{
+            left: -12px;
+            bottom: -5px;
+            transform: rotate(45deg) scale(1);
+        }
+    }
+}
+
   

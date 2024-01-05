@@ -24,45 +24,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
     <title>NEOTET | Digital Creative Agency</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header class="header" id="header">
-        <div class="container header__container flex">
-            <a href="../index.html" class="header__logo flex">
-                <img src="../assets/images/logo/neotet-logo.png" alt="neotet/logo" id="logo">
-                <span>NEOTET</span>
-            </a>
-            <ul class="header__menu flex">
-                <li><a href="#">Services </a></li>
-                <li><a href="#">Projects </a></li>
-                <li><a href="../proccess-page.html">Process </a></li>
-                <li><a href="#">About us</a></li>
-            </ul>
-            <button class="btn header__button" onclick="window.location.href='../contact-page.html'">Contact Us</button>
-            <!--Mobile and Tablet Media-->
-            <div class="header__button-mobile" id="header-btn">
-                <span class="line"></span>
-                <span class="line"></span>
+    <nav>
+        <header class="header" id="header">
+            <div class="container header__container flex">
+                <a href="../index.html" class="header__logo flex">
+                    <img src="../assets/images/logo/neotet-logo.png" alt="neotet/logo" id="logo">
+                    <span>NEOTET</span>
+                </a>
+              <div class="div">
+                <ul class="header__menu flex">
+                    <li><a href="#" title="Neotet's Service Page">Services </a></li>
+                    <li><a href="#" title="Neotet's Projects Page">Projects </a></li>
+                    <li><a href="pages/proccess-page.html" title="Neotet's Process Page">Process </a></li>
+                    <li><a href="#" title="Neotet's About Page">About us</a></li>
+                </ul>
+                <a class="btn header__button" href="pages/about-page.html" class="header_list-item" title="Neotet's Contact Page">Contact Us</a>
+              </div>
+                <!--Mobile and Tablet Media-->
+                <div class="header__button-mobile" id="header-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <ul class="header__menu-mobile flex" id="header-menu">
+                    <li><a href="#" class="header_list-item" title="Neotet's Service Page">Services </a></li>
+                    <li><a href="#" class="header_list-item" title="Neotet's Projects Page">Projects </a></li>
+                    <li><a href="pages/proccess-page.html" class="header_list-item" title="Neotet's Process Page">Process </a></li>
+                    <li><a href="#" class="header_list-item" title="Neotet's About Page">About us </a></li>
+                    <li><a href="pages/about-page.html" class="header_list-item" title="Neotet's Contact Page">Contact Us</a></li>
+                    <li class="social">
+                        <p>Drop us a line </p>
+                        <a href="mailto:neotet.co@gmail.com" title="Send Mail to Neotet">neotet.co@gmail.com</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="header__menu-mobile flex" id="header-menu">
-                <li><a href="#" class="header_list-item">Services </a></li>
-                <li><a href="#" class="header_list-item">Projects </a></li>
-                <li><a href="../proccess-page.html" class="header_list-item">Process </a></li>
-                <li><a href="#" class="header_list-item">About us </a></li>
-                <li><a href="../contact-page.html" class="header_list-item">Contact Us</a></li>
-                <li class="social">
-                    <p>Drop us a line </p>
-                    <a href="mailto:neotet.co@gmail.com">neotet.co@gmail.com</a>
-                </li>
-            </ul>
-        </div>
-        
-    </header>
+        </header>
+    </nav>
     <section class="proccess">
 
         <div class="proccess__title container proccess__container">
