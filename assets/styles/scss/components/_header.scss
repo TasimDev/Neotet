@@ -9,6 +9,39 @@
     transition: var(--transition);
     z-index: 6;
 
+    &.sticky{
+        background: color(black);
+       
+
+        .header__logo{
+            color: #fff;
+        }
+        .header__menu {
+            a{
+                color: #fff;
+            }
+            li{
+                &::after{
+                    background: color(white);
+                }
+            }
+        }
+        .header__button{
+            background: #fff;
+            color: color(black);
+            
+            &:hover{
+                background: transparent;
+                color: color(white);
+                border:1px solid color(white);
+            }
+        }
+        .header__button-mobile {
+            .line{
+                background: color(white);
+            }
+        }
+    }
     &__container {
         justify-content: space-between;
     }

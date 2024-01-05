@@ -128,6 +128,30 @@ button {
   z-index: 6;
   /*Mobile and Table CSS*/
 }
+.header.sticky {
+  background: rgb(17, 17, 17);
+}
+.header.sticky .header__logo {
+  color: #fff;
+}
+.header.sticky .header__menu a {
+  color: #fff;
+}
+.header.sticky .header__menu li::after {
+  background: #fff;
+}
+.header.sticky .header__button {
+  background: #fff;
+  color: rgb(17, 17, 17);
+}
+.header.sticky .header__button:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.header.sticky .header__button-mobile .line {
+  background: #fff;
+}
 .header__container {
   justify-content: space-between;
 }

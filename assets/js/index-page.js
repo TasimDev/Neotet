@@ -21,17 +21,13 @@ let lastScrollTop = 0;
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  let width = window.innerWidth;
-  if (width > '900') {
-    if (scrollTop >= lastScrollTop) {
-      headerNav.style.top = '-100px';
 
-    } else {
-      headerNav.style.top = '0';
-    }
-    lastScrollTop = scrollTop;
+  if (scrollTop > 100) {
+
+    headerNav.classList.add('sticky')
+
   } else {
-    headerNav.style.top = 0;
+    headerNav.classList.remove('sticky');
   }
 
 })
