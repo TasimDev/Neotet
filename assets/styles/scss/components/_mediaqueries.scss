@@ -97,7 +97,16 @@
             padding: 2px 18px;
         }
        }
-    
+    }
+    #quote{
+        header{
+            .title{
+                width: 40%;
+            }
+            .text{
+                width: 60%;
+            }
+        }
     }
    
 }
@@ -128,6 +137,23 @@
     }
 }
     }
+    #quote{
+        header{
+         
+            .title{
+                padding: 1.1rem 0;
+                width: 50%;
+                font-size: .9rem;
+            }
+            .text{
+                width: 50%;
+                font-weight: 700;
+                font-size: 2rem;
+            }
+        }
+    }
+   
+   
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
