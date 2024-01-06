@@ -340,6 +340,9 @@ button {
   flex-direction: column;
   gap: 2rem;
 }
+#about .container .text-gray {
+  font-size: 1rem;
+}
 #about .container p {
   font-size: 2rem;
   width: 60%;

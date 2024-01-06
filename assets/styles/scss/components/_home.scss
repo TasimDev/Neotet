@@ -59,6 +59,9 @@
         justify-content: center;
         flex-direction: column;
         gap: 2rem;
+        .text-gray{
+            font-size: 1rem;
+        }
         p{
             font-size: 2rem;
             width: 60%;
