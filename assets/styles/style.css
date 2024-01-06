@@ -820,15 +820,18 @@ button {
   #about .container p {
     text-align: left;
   }
+  #quote header {
+    flex-direction: column;
+  }
   #quote header .title {
     padding: 1.1rem 0;
-    width: 50%;
-    font-size: 0.9rem;
+    width: 100%;
+    font-size: 1rem;
   }
   #quote header .text {
-    width: 50%;
-    font-weight: 700;
-    font-size: 2rem;
+    padding: 1.1rem 0;
+    width: 100%;
+    font-size: 2.3rem;
   }
 }
 /* 

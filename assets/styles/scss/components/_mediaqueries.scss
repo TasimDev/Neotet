@@ -139,16 +139,16 @@
     }
     #quote{
         header{
-         
+            flex-direction: column;
             .title{
                 padding: 1.1rem 0;
-                width: 50%;
-                font-size: .9rem;
+                width: 100%;
+                font-size: 1rem;
             }
             .text{
-                width: 50%;
-                font-weight: 700;
-                font-size: 2rem;
+                padding: 1.1rem 0;
+                width: 100%;
+                font-size: 2.3rem;
             }
         }
     }
