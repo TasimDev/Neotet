@@ -766,6 +766,13 @@ button {
   #image {
     background-position: top;
   }
+  #about .container {
+    justify-content: start;
+    align-items: start;
+  }
+  #about .container p {
+    text-align: left;
+  }
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)

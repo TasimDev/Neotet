@@ -119,6 +119,15 @@
     #image{
         background-position: top;
     }
+    #about{
+.container{
+    justify-content: start;
+    align-items: start;
+    p{
+        text-align: left;
+    }
+}
+    }
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
