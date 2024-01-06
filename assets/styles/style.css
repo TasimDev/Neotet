@@ -73,10 +73,25 @@ button {
 }
 
 .btn {
-  padding: 10px 30px;
-  cursor: pointer;
-  border: 1px solid rgb(17, 17, 17);
-  border-radius: 60px;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+.btn .icon {
+  display: inline-block;
+  background: rgb(17, 17, 17);
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.btn:hover .icon {
+  width: 3rem;
+  border-radius: 35px;
 }
 
 #bg_stars {
@@ -140,14 +155,12 @@ button {
 .header.sticky .header__menu li::after {
   background: #fff;
 }
-.header.sticky .header__button {
+.header.sticky .contact-btn {
+  color: #fff;
+}
+.header.sticky .contact-btn .icon {
   background: #fff;
   color: rgb(17, 17, 17);
-}
-.header.sticky .header__button:hover {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #fff;
 }
 .header.sticky .header__button-mobile .line {
   background: #fff;
@@ -214,16 +227,8 @@ button {
   width: 100%;
 }
 .header__button {
-  background: rgb(17, 17, 17);
-  color: #fff;
-  font-family: var(--body-font);
-  font-size: 1rem;
-  font-weight: 600;
-  transition: var(--transition);
-}
-.header__button:hover {
-  background: #fff;
   color: rgb(17, 17, 17);
+  font-weight: 700;
 }
 .header__button-mobile {
   width: 30px;
@@ -289,7 +294,7 @@ button {
   text-align: left;
 }
 .home__title {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -351,8 +356,9 @@ button {
   word-spacing: 0.2rem;
 }
 #about .container a {
-  color: #fff;
-  background: rgb(17, 17, 17);
+  color: rgb(17, 17, 17);
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 #quote {
@@ -365,6 +371,7 @@ button {
   font-size: 1.2rem;
   border-top: 1px solid rgb(17, 17, 17);
   border-bottom: 1px solid rgb(17, 17, 17);
+  overflow: hidden;
 }
 #quote header .title {
   width: 30%;
@@ -394,6 +401,27 @@ button {
   100% {
     transform: translate(-600%);
   }
+}
+
+#contact {
+  padding: 12rem 0rem;
+  background: rgb(149, 255, 124);
+  background: linear-gradient(180deg, rgb(149, 255, 124) 0%, rgb(240, 241, 0) 100%);
+}
+#contact .container .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 50%;
+}
+#contact .container .wrapper header {
+  font-size: 2.3rem;
+  font-family: var(--header-font);
+}
+#contact .container .wrapper a {
+  font-size: 1.1rem;
+  color: rgb(17, 17, 17);
+  font-weight: 500;
 }
 
 .contact {
@@ -783,6 +811,9 @@ button {
   .proccess__proccesing .container .phase .text {
     width: 70%;
   }
+  #contact .container .wrapper {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 900px) {
   #about .container p {
@@ -835,6 +866,9 @@ button {
     padding: 1.1rem 0;
     width: 100%;
     font-size: 2.3rem;
+  }
+  #contact .container .wrapper {
+    width: 100%;
   }
 }
 /* 

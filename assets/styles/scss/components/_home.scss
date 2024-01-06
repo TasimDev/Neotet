@@ -5,7 +5,7 @@
     position: relative;
     text-align: left;
     &__title {
-        width: 80%;
+        width: 100%;
        
         display: flex;
         align-items: center;
@@ -70,8 +70,9 @@
             word-spacing: .2rem;
         }
         a{
-            color: color(white);
-            background: color(black);
+            color: color(black);
+            font-size: 1.1rem;
+            font-weight: 500;
         }
       
     }
@@ -85,6 +86,7 @@
         font-size: 1.2rem;
         border-top: 1px solid color(black);
         border-bottom: 1px solid color(black);
+        overflow: hidden;
         .title{
             width: 30%;
             height: 100%;
@@ -117,4 +119,28 @@
             }
         }
     }
+}
+#contact{
+    padding: 12rem 0rem;
+    background: rgb(149,255,124);
+    background: linear-gradient(180deg, rgba(149,255,124,1) 0%, rgba(240,241,0,1) 100%);
+        
+    .container{
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                width: 50%;
+                header{
+                    font-size: 2.3rem;
+                    font-family: var(--header-font);
+                }
+                a{
+                    font-size: 1.1rem;
+                    color: color(black);
+                    font-weight: 500;
+                        
+                }
+            }
+        }
 }

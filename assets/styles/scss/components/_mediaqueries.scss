@@ -81,7 +81,13 @@
             }
         }
     }
-
+    #contact{
+        .container{
+            .wrapper{
+                width: 80%;
+            }
+        }
+    }
 
 }
 @media screen and (max-width: 900px){
@@ -154,7 +160,13 @@
         }
     }
    
-   
+    #contact{
+        .container{
+            .wrapper{
+                width: 100%;
+            }
+        }
+    }
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
