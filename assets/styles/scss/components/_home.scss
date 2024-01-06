@@ -144,3 +144,48 @@
             }
         }
 }
+#services{
+    padding: 3rem 2rem;
+    .container{
+        display: flex;
+        align-items: center;
+       flex-direction: column;
+       gap: 6rem;
+      main{
+        width: 100%;
+        
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        li{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            align-items: center;
+            padding-bottom: 2rem;
+            &:last-child{
+                border: none;
+            }
+           gap: 6rem;
+            header{
+                width: 25%;
+                font-family: var(--header-font);
+            }
+            main{
+                width: 50%;
+            }
+            button{
+                width: 25%;
+                a{
+                    color: color(black);
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+      }
+       
+    }
+}

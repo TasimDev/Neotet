@@ -115,6 +115,29 @@
             }
         }
     }
+    #services{
+        .container{
+            main{
+                ul{
+                    li{
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        gap: 2rem;
+                        header{
+                            width: 100%;
+                        }
+                        main{
+                            width: 100%;
+                        }
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
    
 }
 @media screen and (max-width: 600px) {

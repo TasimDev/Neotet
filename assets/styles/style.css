@@ -424,6 +424,50 @@ button {
   font-weight: 500;
 }
 
+#services {
+  padding: 3rem 2rem;
+}
+#services .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
+}
+#services .container main {
+  width: 100%;
+}
+#services .container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+#services .container ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  align-items: center;
+  padding-bottom: 2rem;
+  gap: 6rem;
+}
+#services .container ul li:last-child {
+  border: none;
+}
+#services .container ul li header {
+  width: 25%;
+  font-family: var(--header-font);
+}
+#services .container ul li main {
+  width: 50%;
+}
+#services .container ul li button {
+  width: 25%;
+}
+#services .container ul li button a {
+  color: rgb(17, 17, 17);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
 .contact {
   width: 100%;
 }
@@ -829,6 +873,21 @@ button {
   }
   #quote header .text {
     width: 60%;
+  }
+  #services .container main ul li {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+  }
+  #services .container main ul li header {
+    width: 100%;
+  }
+  #services .container main ul li main {
+    width: 100%;
+  }
+  #services .container main ul li button {
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
