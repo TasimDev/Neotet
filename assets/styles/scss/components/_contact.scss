@@ -1,162 +1,43 @@
-.contact {
-    width: 100%;
-
-
-    &__container {
-        position: relative;
-        padding: 12rem 0rem 0rem;
-
-        .contant_us{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        p{
-            color: rgb(156, 156, 156);
-            text-transform: uppercase;
-            padding-bottom: 20px;
-            font-size: .9em;
-        }
-
-
-        .contant_us {
+#contact-page{
+    .container{
+        header{
+            padding: 12rem 0rem 3rem 0rem;
             display: flex;
-            justify-content: center;
-
             flex-direction: column;
-
-            p {
-
-            margin-top: 50px ;
-            margin-bottom: 10%;
-            width: 500px;
-            z-index: 3;
-            background-color: color(black);
-            padding: 20px;
-            border-radius: 15px;
-            position: relative;
-            textarea{
-                padding: 20px;
-                font-size: 1.3em;
-                font-weight: 100;
-                outline: none;
-                resize: none;
-                background: none;
-                color: white;
-                font-style: italic;
+           gap: 6rem;
+            .images{
+                position: relative;
+                .profile{
+                    width: 69px;
+                    height: 69px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    border: 4px solid color(white);
+                    position: absolute;
+                    img{
+                        border-radius: 50%;
+                    }
+                    &:last-child{
+                        top: 0;
+                        left: 50px;
+                    }
+                }
             }
-
-
-            label {
-                color: gray;
-                text-transform: uppercase;
-                padding-bottom: 20px;
-                font-size: .9em;
-            }
-
-
-
-
-            #form {
+            .header-title{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                margin-top: 50px;
-                width: 400px;
-
-            input {
-                padding: 10px;
-                font-size: 1.3em;
-                font-weight: 100;
-                outline: none;
-                background-color: color(black);
-                border: 1px solid gray;
-                color: color(white);
+                gap: 1rem;
+                h2{
+                    font-size: 3rem;
+                    font-weight: 800;
+                    font-family: var(--header-font);
+                }
+                p{
+                    width: 50%;
+                    font-size: 1.2rem;
+                    color: color(text-gray)
+                }
             }
-
-
-            button{
-                font-size: 1.5em;
-                background-color: color(black);
-                color: color(white);
-                padding: 15px;
-                cursor: pointer;
-                margin-top: 50px ;
-                margin-bottom: 20px;
-                border: 1px solid gray;
-                transition: var(--transition);
-                 &:hover{
-                    background: color(white);
-                    color: color(black);
-                    border: 1px solid black;
-                 }
-
-
-
-                textarea {
-                    padding: 20px;
-                    font-size: 1.3em;
-                    font-weight: 100;
-                    outline: none;
-                    resize: none;
-                }
-
-                label {
-                    color: gray;
-                    text-transform: uppercase;
-                    padding-bottom: 1ch;
-                    padding-top: 15px;
-                    font-size: .9em;
-                }
-
-                input {
-                    padding: 10px;
-                    font-size: 1.3em;
-                    font-weight: 100;
-                    outline: none;
-                }
-
-
-                button {
-                    font-size: 1.5em;
-                    background-color: color(black);
-                    color: color(white);
-                    padding: 15px;
-                    cursor: pointer;
-                    margin-top: 50px;
-                    transition: var(--transition);
-
-                    &:hover {
-                        background: color(white);
-                        color: color(black);
-                        border: 1px solid black;
-                    }
-
-
-
-
-                }
-
-            }
-
-        }
-
-       
-    }
-
-    .map {
-        position: absolute;
-        bottom: 0px;
-        z-index: 2;
-        -webkit-filter: grayscale(100%);
-           -moz-filter: grayscale(100%);
-            -ms-filter: grayscale(100%);
-            -o-filter: grayscale(100%);
-            filter: grayscale(100%);
-        }
-
-
-}
         }
     }
 }

@@ -153,6 +153,17 @@
             }
         }
     }
+    #contact-page{
+        .container{
+            header{
+                .header-title{
+                    p{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
    
 }
 @media screen and (max-width: 600px) {
@@ -224,7 +235,31 @@
             }
         }
     }
-    
+    #contact-page{
+        .container{
+            header{
+               
+                .images{
+                    .profile{
+                        width: 60px;
+                        height: 60px;
+                        &:last-child{
+                            top: 0;
+                            left:42px;
+                        }
+                    }
+                }
+                .header-title{
+                    h2{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
