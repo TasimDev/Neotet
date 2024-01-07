@@ -138,6 +138,21 @@
             }
         }
     }
+    #footer{
+        .footer__container{
+            .footer__center{
+                flex-direction: column;
+            }
+            .footer__socials{
+               flex-direction: column-reverse;
+               gap: 3rem;
+               text-align: center;
+               p{
+                font-size: .8rem;
+               }
+            }
+        }
+    }
    
 }
 @media screen and (max-width: 600px) {
@@ -190,6 +205,26 @@
             }
         }
     }
+    #footer{
+        .footer__container{
+            .footer__center{
+                .footer-list{
+                    flex-direction: column;
+                    gap: 3rem;
+                    li{
+                        width: 100%;
+                       
+                    }
+                }
+            }
+            .footer__socials{
+               flex-direction: column-reverse;
+               gap: 3rem;
+               text-align: center;
+            }
+        }
+    }
+    
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -217,26 +252,6 @@
             }
         }
 
-    }
-
-    .footer {
-        &__center {
-            .footer-list {
-                gap: 3rem;
-                flex-direction: column;
-            }
-        }
-
-        &__socials {
-            .socials {
-                width: 100%;
-
-                li {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-        }
     }
 
     .home {

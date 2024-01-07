@@ -1,113 +1,77 @@
 /*==============HEADER=============*/
-.footer {
+#footer {
     background: color(black);
-    color: color(text-gray);
+  
     padding-top: 4rem;
     position: absolute;
     width: 100%;
-    &__container {
+    .footer__container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: start;
+        gap: 3rem;
     }
 
-    &__top {
+    .footer__top {
         cursor: default;
-        text-align: center;
-
+    
+        span{
+            color: color(text-gray);
+        }
         .title {
             font-size: 3rem;
             color: color(white);
             font-weight: 700;
+            font-family: var(--header-font);
         }
     }
 
-    &__center {
-        width: 100%;
-        padding: 3rem 0;
-
-        .footer-list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-            padding: 12px 0;
-            text-align: center;
-
-            li {
-                padding-bottom: 10px;
-            }
-
-            .email {
-                font-size: 1.3rem;
-                border-bottom: 2px solid color(text-gray);
-
-                height: 100%;
-                transition: var(--transition);
-
-                a {
-                    color: color(text-gray);
-                    transition: var(--transition);
-                }
-
-                &:hover {
-                    border-bottom: 2px solid color(white);
-
-                    a {
-                        color: color(white);
-                    }
-                }
-            }
-
-            .quote {
-                border: 2px solid;
-                padding: 10px 36px 10px 36px;
-                border-radius: $borderRadius;
-                transition: var(--transition);
-
-
-                a {
-                    color: color(text-gray);
-                    transition: var(--transition);
-                    width: 100%;
-                    height: 100%;
-                }
-
-                &:hover {
-                    border: 2px solid color(white);
-
-                    a {
-                        color: color(white);
-                    }
-                }
-            }
-
-            .place {
-                cursor: default;
-            }
-
-        }
-
-    }
-
-    &__socials {
-        width: 100%;
-        padding: 3rem 0;
+    .footer__center{
         display: flex;
         align-items: center;
         justify-content: center;
-        border-top: 1px solid rgba(128, 128, 128, 0.205);
+        width: 100%;
+        
+        .footer-list{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          
+           li{
+            header{
+                font-family: var(--header-font);
+                color: color(white);
+            }
+            display: flex;
+            flex-direction: column;
+             width: calc(100%/3);
+             gap: .7rem;
+             a,p{
+                color: color(text-gray);
+             }
+           }
+        }
+      
+    }
 
+    .footer__socials {
+        width: 100%;
+        padding: 3rem 0;
+        display: flex;
+       justify-content: space-between;
+        border-top: 1px solid rgba(128, 128, 128, 0.205);
+        p{
+           color:color(white);
+        }
         .socials {
-            width: 60%;
+         
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 2rem;
-
             li {
-                border: 1px solid;
+              
                 width: 45px;
                 height: 45px;
                 display: flex;
