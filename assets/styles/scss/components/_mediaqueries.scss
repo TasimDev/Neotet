@@ -163,7 +163,22 @@
                 }
             }
         }
+        #contact-info{
+            .container{
+                flex-direction: column;
+                gap: 3rem;
+    
+                header{
+                    width: 100%;
+                }
+                
+               form{
+                    width: 100%;
+                }
+            }
+        }
     }
+    
    
 }
 @media screen and (max-width: 600px) {
@@ -259,7 +274,19 @@
                 }
             }
         }
+        #contact-info{
+            .container{
+                header{
+                    
+                    h2{
+                        font-size: 2rem;
+                        
+                    }
+                }
+            }
+        }
     }
+    
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)

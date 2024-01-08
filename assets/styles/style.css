@@ -469,7 +469,7 @@ button {
 }
 
 #contact-page .container header {
-  padding: 12rem 0rem 3rem 0rem;
+  padding: 12rem 0rem 6rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -506,6 +506,65 @@ button {
   width: 50%;
   font-size: 1.2rem;
   color: rgb(128, 128, 128);
+}
+#contact-page #contact-info {
+  border-top: 1px solid rgb(214, 214, 214);
+  padding: 6rem 0rem 3rem 0rem;
+}
+#contact-page #contact-info .container {
+  display: flex;
+  justify-content: space-between;
+}
+#contact-page #contact-info .container header {
+  padding: 0;
+  width: 50%;
+}
+#contact-page #contact-info .container header h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+}
+#contact-page #contact-info .container form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#contact-page #contact-info .container form .info {
+  display: flex;
+  justify-content: space-between;
+}
+#contact-page #contact-info .container form .label {
+  display: flex;
+  flex-direction: column;
+}
+#contact-page #contact-info .container form .label label {
+  font-size: 1.1rem;
+}
+#contact-page #contact-info .container form .label input {
+  padding: 0.6rem;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(17, 17, 17);
+  outline: none;
+}
+#contact-page #contact-info .container form .label input:focus {
+  transition: all 0.3s ease-in;
+  border-bottom: 2px solid rgb(17, 17, 17);
+}
+#contact-page #contact-info .container form .btn-submit {
+  width: 36%;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  background: rgb(17, 17, 17);
+  border: none;
+  color: #fff;
+}
+#contact-page #contact-info .container form textarea {
+  border: none;
+  border-bottom: 1px solid rgb(17, 17, 17);
+  resize: vertical;
 }
 
 /*==============Proccess================*/
@@ -792,6 +851,16 @@ button {
   #contact-page .container header .header-title p {
     width: 80%;
   }
+  #contact-page #contact-info .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #contact-page #contact-info .container header {
+    width: 100%;
+  }
+  #contact-page #contact-info .container form {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
   .home__title {
@@ -857,6 +926,9 @@ button {
   }
   #contact-page .container header .header-title p {
     font-size: 1rem;
+  }
+  #contact-page #contact-info .container header h2 {
+    font-size: 2rem;
   }
 }
 /* 

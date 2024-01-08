@@ -1,7 +1,7 @@
 #contact-page{
     .container{
         header{
-            padding: 12rem 0rem 3rem 0rem;
+            padding: 12rem 0rem 6rem 0rem;
             display: flex;
             flex-direction: column;
            gap: 6rem;
@@ -39,5 +39,76 @@
                 }
             }
         }
+    }
+    #contact-info{
+        border-top: 1px solid rgb(214, 214, 214);
+        padding: 6rem 0rem 3rem 0rem;
+     
+        .container{
+            display: flex;
+            justify-content: space-between;
+         
+            header{
+                padding: 0;
+             width: 50%;
+                h2{
+                    
+                    font-size: 3rem;
+                    font-weight: 800;
+                    font-family: var(--header-font);
+                }
+            }
+            form{
+           width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .info{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                }
+                .label{
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        font-size: 1.1rem;
+                    }
+                    input{
+                        padding: .6rem;
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid color(black);
+                        outline: none;
+                    
+                        &:focus{
+                            transition: all .3s ease-in;
+                            border-bottom: 2px solid color(black)
+                        }
+
+                    }
+                  
+                    
+                }
+                .btn-submit{
+                    width: 36%;
+                    padding: .8rem;
+                    font-size: 1.2rem;
+                    background: color(black);
+                    border: none;
+                    color: color(white);
+                  
+                }
+                textarea{
+                    border: none;
+                    border-bottom: 1px solid color(black);
+                    resize: vertical;
+                }
+
+            }
+            
+        }
+
     }
 }
