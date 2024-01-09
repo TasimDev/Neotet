@@ -355,7 +355,37 @@
             }
         }
     }
-    
+    #about-page{
+        main{
+            .container{
+                .team{
+                    .profile{
+                        .department{
+                            width: 30%;
+                        }
+                        .profile-info{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+        #quote{
+            header{
+                flex-direction: column;
+                .title{
+                    padding: 1.1rem 0;
+                    width: 100%;
+                    font-size: 1rem;
+                }
+                .text{
+                    padding: 1.1rem 0;
+                    width: 100%;
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
