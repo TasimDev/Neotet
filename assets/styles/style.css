@@ -564,6 +564,7 @@ button {
   background: rgb(17, 17, 17);
   border: none;
   color: #fff;
+  border-radius: 70px;
 }
 #contact-page #contact-info .container form textarea {
   border: none;
@@ -574,6 +575,61 @@ button {
 #contact-page #contact-info .container form textarea:focus {
   transition: all 0.3s ease-in;
   border: 2px solid rgb(17, 17, 17);
+}
+#contact-page #contact-names {
+  background: rgb(149, 255, 124);
+  background: linear-gradient(180deg, rgb(149, 255, 124) 0%, rgb(240, 241, 0) 100%);
+  padding: 6rem 0rem;
+}
+#contact-page #contact-names .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+#contact-page #contact-names .container header {
+  padding: 0;
+  width: 30%;
+}
+#contact-page #contact-names .container header h2 {
+  font-family: var(--header-font);
+  font-size: 2.6rem;
+}
+#contact-page #contact-names .container ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+}
+#contact-page #contact-names .container ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact-page #contact-names .container ul li header {
+  width: 100%;
+}
+#contact-page #contact-names .container .first, #contact-page #contact-names .container .second {
+  display: flex;
+  gap: 3rem;
+}
+#contact-page #contact-names .container .first header, #contact-page #contact-names .container .second header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+}
+#contact-page #contact-names .container .first main, #contact-page #contact-names .container .second main {
+  color: rgba(105, 105, 105, 0.884);
+}
+#contact-page #contact-names .container .second header a {
+  font-size: 2rem;
+  color: #fff;
+  background: rgb(17, 17, 17);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 70px;
+}
+#contact-page #contact-names .container .second main {
+  text-align: justify;
 }
 
 /*==============Proccess================*/
@@ -815,6 +871,15 @@ button {
   #contact .container .wrapper {
     width: 80%;
   }
+  #contact-page #contact-names .container header {
+    width: 100%;
+  }
+  #contact-page #contact-names .container ul {
+    width: 100%;
+  }
+  #contact-page #contact-names .container .first, #contact-page #contact-names .container .second {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 900px) {
   #about .container p {
@@ -869,6 +934,38 @@ button {
   }
   #contact-page #contact-info .container form {
     width: 100%;
+  }
+  #contact-page #contact-names .container {
+    gap: 5rem;
+  }
+  #contact-page #contact-names .container header {
+    width: 100%;
+  }
+  #contact-page #contact-names .container header h2 {
+    font-size: 2.4rem;
+  }
+  #contact-page #contact-names .container ul {
+    width: 100%;
+    gap: 2rem;
+  }
+  #contact-page #contact-names .container ul li {
+    gap: 0.4rem;
+  }
+  #contact-page #contact-names .container ul li p {
+    font-size: 1rem;
+  }
+  #contact-page #contact-names .container .first, #contact-page #contact-names .container .second {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #contact-page #contact-names .container .first header, #contact-page #contact-names .container .second header {
+    font-size: 1.1rem;
+  }
+  #contact-page #contact-names .container .second ul li {
+    gap: 2rem;
+  }
+  #contact-page #contact-names .container .second header a {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -938,6 +1035,12 @@ button {
   }
   #contact-page #contact-info .container header h2 {
     font-size: 2rem;
+  }
+  #contact-page #contact-names .container ul {
+    flex-direction: column;
+  }
+  #contact-page #contact-names .container .second ul {
+    gap: 4rem;
   }
 }
 /* 
