@@ -468,6 +468,49 @@ button {
   font-size: 1.1rem;
 }
 
+#about-page .container header {
+  padding: 12rem 0rem 6rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#about-page .container header .title {
+  color: rgb(128, 128, 128);
+  font-family: var(--header-font);
+  font-size: 1.1rem;
+}
+#about-page .container header h2 {
+  font-size: 3rem;
+  font-family: var(--header-font);
+}
+#about-page .container header p {
+  font-size: 1rem;
+}
+#about-page .container main .team {
+  display: flex;
+  gap: 5rem;
+}
+#about-page .container main .team .team-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#about-page .container main .team .team-profile .image {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgb(149, 255, 124) 0%, rgb(240, 241, 0) 100%);
+}
+#about-page .container main .team .team-profile header {
+  padding: 0;
+}
+#about-page .container main .team .team-profile header h2 {
+  font-size: 1.1rem;
+}
+
 #contact-page .container header {
   padding: 12rem 0rem 6rem 0rem;
   display: flex;
@@ -647,6 +690,7 @@ button {
 .proccess__title {
   padding: 16rem 16px;
   font-size: 1.6rem;
+  font-family: var(--header-font);
 }
 .proccess__about {
   background: #F7F7FC;
@@ -661,6 +705,7 @@ button {
 }
 .proccess__about .container .title h2 {
   margin-bottom: 16px;
+  font-family: var(--header-font);
 }
 .proccess__about .container .title p {
   font-size: 1.1rem;
@@ -711,6 +756,7 @@ button {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 2rem;
+  font-family: var(--header-font);
 }
 .proccess__proccesing .container .phase .text p {
   font-size: 1.1rem;

@@ -2,8 +2,6 @@
 
 .proccess {
 
-
-
     span {
         display: block;
         color: rgba(128, 128, 128, 0.699);
@@ -20,7 +18,7 @@
     &__title {
         padding: 16rem 16px;
         font-size: 1.6rem;
-
+        font-family: var(--header-font);
 
     }
 
@@ -39,6 +37,7 @@
 
                 h2 {
                     margin-bottom: 16px;
+                    font-family: var(--header-font);
                 }
 
                 p {
@@ -101,6 +100,7 @@
                         font-size: 3rem;
                         font-weight: 700;
                         margin-bottom: 2rem;
+                        font-family: var(--header-font);
                     }
 
                     p {
