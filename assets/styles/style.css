@@ -468,47 +468,75 @@ button {
   font-size: 1.1rem;
 }
 
-#about-page .container header {
+#about-page header {
   padding: 12rem 0rem 6rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-#about-page .container header .title {
+#about-page header .title {
   color: rgb(128, 128, 128);
   font-family: var(--header-font);
   font-size: 1.1rem;
 }
-#about-page .container header h2 {
+#about-page header h2 {
+  margin-top: 1rem;
   font-size: 3rem;
   font-family: var(--header-font);
 }
-#about-page .container header p {
+#about-page header p {
   font-size: 1rem;
+  margin-top: 1.5rem;
 }
-#about-page .container main .team {
+#about-page main .container .team .profile {
   display: flex;
-  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0rem;
+  border-bottom: 1px solid rgb(218, 218, 218);
 }
-#about-page .container main .team .team-profile {
+#about-page main .container .team .profile .department {
+  transform: rotate(-90deg);
+  width: 20%;
+  text-align: center;
+  color: rgba(105, 105, 105, 0.884);
+}
+#about-page main .container .team .profile .profile-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+#about-page main .container .team .profile .profile-info .names {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-#about-page .container main .team .team-profile .image {
-  width: 130px;
-  height: 130px;
+#about-page main .container .team .profile .profile-info .names .name {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#about-page main .container .team .profile .profile-info .names .name .image img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+#about-page main .container .team .profile .profile-info .socials a {
+  display: inline-block;
+  background: rgb(17, 17, 17);
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: linear-gradient(180deg, rgb(149, 255, 124) 0%, rgb(240, 241, 0) 100%);
+  color: #fff;
 }
-#about-page .container main .team .team-profile header {
-  padding: 0;
-}
-#about-page .container main .team .team-profile header h2 {
-  font-size: 1.1rem;
+#about-page main .container .team .profile .socials {
+  width: 20%;
 }
 
 #contact-page .container header {
