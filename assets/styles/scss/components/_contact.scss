@@ -66,11 +66,15 @@
                 .info{
                     display: flex;
                     justify-content: space-between;
+                    .label{
+                        width: 45%;
+                    }
                     
                 }
                 .label{
                     display: flex;
                     flex-direction: column;
+                    gap: .5rem;
                     label{
                         font-size: 1.1rem;
                     }
@@ -104,6 +108,11 @@
                     border: none;
                     border-bottom: 1px solid color(black);
                     resize: vertical;
+                    outline: none;
+                    &:focus{
+                        transition: all .3s ease-in;
+                        border: 2px solid color(black);
+                    }
                 }
 
             }

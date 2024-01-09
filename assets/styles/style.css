@@ -534,9 +534,13 @@ button {
   display: flex;
   justify-content: space-between;
 }
+#contact-page #contact-info .container form .info .label {
+  width: 45%;
+}
 #contact-page #contact-info .container form .label {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 #contact-page #contact-info .container form .label label {
   font-size: 1.1rem;
@@ -565,6 +569,11 @@ button {
   border: none;
   border-bottom: 1px solid rgb(17, 17, 17);
   resize: vertical;
+  outline: none;
+}
+#contact-page #contact-info .container form textarea:focus {
+  transition: all 0.3s ease-in;
+  border: 2px solid rgb(17, 17, 17);
 }
 
 /*==============Proccess================*/
