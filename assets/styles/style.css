@@ -207,6 +207,9 @@ button {
   font-weight: 700;
   font-size: 1rem;
 }
+.header__menu #services-link {
+  position: relative;
+}
 .header__menu li {
   padding: 8px 3px;
   display: flex;
@@ -284,6 +287,63 @@ button {
 .header__menu-mobile.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.services__menu {
+  position: fixed;
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 5;
+  top: -100%;
+  transition: all 0.3s ease-in-out;
+}
+.services__menu .services {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  padding: 4rem 0rem 0 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.services__menu .services .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
+  margin-top: 1.5rem;
+  gap: 4rem;
+}
+.services__menu .services .container a {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.services__menu .services .container li {
+  padding: 8px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.services__menu .services .container li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  background: rgb(17, 17, 17);
+  bottom: 0;
+  transition: var(--transition);
+}
+.services__menu .services .container li:hover::after {
+  width: 100%;
+}
+
+.services__menu.active {
+  top: 0;
 }
 
 /*==========HOME==========*/

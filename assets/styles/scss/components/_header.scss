@@ -41,7 +41,6 @@
     &__container {
         justify-content: space-between;
     }
-
     &__logo {
         position: relative;
         cursor: pointer;
@@ -85,8 +84,11 @@
             color: color(text-black);
             font-weight: 700;
             font-size: 1rem;
+            
         }
-
+        #services-link{
+            position: relative;
+        }
         li {
 
             padding: 8px 3px;
@@ -191,4 +193,67 @@
         opacity: 1;
     }
 
+}
+.services__menu{
+position:fixed;
+width: 100%;
+backdrop-filter: blur(10px);
+z-index: 5;
+top: -100%;
+transition: all .3s ease-in-out;
+.services{
+    width: 100%;
+    background: color(white);
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding: 4rem 0rem 0 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0rem;
+        margin-top: 1.5rem;
+        gap: 4rem;
+      
+        a{
+            color: color(text-black);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        li {
+
+            padding: 8px 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        
+
+            &::after {
+                content: '';
+                width: 0%;
+                height: 2px;
+                position: absolute;
+                background: color(black);
+                bottom: 0;
+                transition: var(--transition);
+            }
+
+            &:hover {
+
+                &::after {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}
+}
+.services__menu.active{
+    top: 0;
 }
