@@ -6,7 +6,12 @@ let headerListItem = document.querySelectorAll('.header_list-item');
 let headerLogo = document.querySelector('.header__logo #logo')
 const serviceLink = document.querySelector("#service-link");
 const servicesMenu = document.querySelector(".services_menu");
+const mobileServiceButton = document.querySelector("#mobile-service-list");
+const mobilseServiceLinks = document.querySelector("#mobile-service-list .links")
 
+mobileServiceButton.addEventListener("click", () => {
+  mobilseServiceLinks.classList.toggle("active");
+})
 
 headerListItem.forEach((item) => {
   item.addEventListener('click', toggleHeader);
