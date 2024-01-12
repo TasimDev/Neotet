@@ -4,34 +4,45 @@ let headerMenu = document.querySelector('#header-menu');
 let headerNav = document.querySelector('#header');
 let headerListItem = document.querySelectorAll('.header_list-item');
 let headerLogo = document.querySelector('.header__logo #logo')
+const serviceLink = document.querySelector("#service-link");
+const servicesMenu = document.querySelector(".services_menu");
 
 
 headerListItem.forEach((item) => {
-  item.addEventListener('click', () => {
-    toggleHeader();
-  });
+  item.addEventListener('click', toggleHeader);
 });
 
-let lastScrollTop = 0;
+window.addEventListener('scroll', handleScroll);
 
-window.addEventListener("scroll", handleScroll);
+servicesMenu.addEventListener('mouseover', handleMouseOver);
+servicesMenu.addEventListener('mouseout', handleMouseOut);
 
+serviceLink.addEventListener('mouseover', handleMouseOver);
+serviceLink.addEventListener('mouseout', handleMouseOut);
 
-
-const servicesMenu = document.querySelector(".services__menu");
-const serviceLink = document.querySelector("#services-link");
-
-
+headerBtn.addEventListener('click', toggleHeader);
 
 function handleScroll() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  updateHeader(scrollTop);
+}
 
-  if (scrollTop > 100) {
+function handleMouseOver() {
+  updateHeader(0, true);
+}
+
+function handleMouseOut() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  updateHeader(scrollTop);
+}
+
+function updateHeader(scrollTop, isMouseOver = false) {
+  if (scrollTop > 100 || isMouseOver) {
     headerNav.classList.add('sticky');
-    headerLogo.setAttribute('src', "assets/images/logo/neotet-white-logo.png");
+    headerLogo.setAttribute('src', 'assets/images/logo/neotet-white-logo.png');
   } else {
     headerNav.classList.remove('sticky');
-    headerLogo.setAttribute('src', "assets/images/logo/neotet-logo.png");
+    headerLogo.setAttribute('src', 'assets/images/logo/neotet-logo.png');
   }
 }
 
@@ -42,17 +53,10 @@ function toggleHeader() {
 }
 
 function showServicesMenu() {
-
-  servicesMenu.classList.add("active");
-
+  servicesMenu.classList.add('active');
 }
 
 function closeServicesMenu() {
-  servicesMenu.classList.remove("active");
-
+  servicesMenu.classList.remove('active');
 }
-
-
-headerBtn.addEventListener('click', toggleHeader);
-
 
