@@ -6,13 +6,20 @@ let headerListItem = document.querySelectorAll('.header_list-item');
 let headerLogo = document.querySelector('.header__logo #logo')
 const servicesMenu = document.querySelector("#service-menu");
 const serviceCloseBtn = document.querySelector("#close-service-menu");
-const serviceButtons = document.querySelectorAll(".service-links");
+const serviceLinks = document.querySelectorAll(".service-links");
+const serviceButtons = document.querySelectorAll(".service-buttons")
 
+serviceLinks.forEach(btn => {
+  btn.addEventListener("click", () => {
+    servicesMenu.classList.add("active");
+    toggleHeader();
+  })
+});
 
 serviceButtons.forEach(btn => {
   btn.addEventListener("click", () => {
     servicesMenu.classList.add("active");
-    toggleHeader();
+
   })
 });
 
