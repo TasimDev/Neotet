@@ -7,7 +7,7 @@ let headerLogo = document.querySelector('.header__logo #logo')
 const servicesMenu = document.querySelector("#service-menu");
 const serviceCloseBtn = document.querySelector("#close-service-menu");
 const serviceLinks = document.querySelectorAll(".service-links");
-const serviceButtons = document.querySelectorAll(".service-buttons")
+
 
 serviceLinks.forEach(btn => {
   btn.addEventListener("click", () => {
@@ -16,12 +16,6 @@ serviceLinks.forEach(btn => {
   })
 });
 
-serviceButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    servicesMenu.classList.add("active");
-
-  })
-});
 
 serviceCloseBtn.addEventListener("click", () => {
   servicesMenu.classList.remove("active");
