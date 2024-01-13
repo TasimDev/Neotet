@@ -33,7 +33,6 @@
 
 <body>
     <nav>
-
         <header class="header" id="header">
             <div class="container header__container flex">
                 <a href="../index.html" class="header__logo flex">
@@ -42,18 +41,7 @@
                 </a>
                
                     <ul class="header__menu flex">
-                    <div class="services_dropdown_menu">
-                        <li class="list-item"  id="service-link"><a href="#" title="Neotet's Service Page" class="links">Services</a></li>
-                       <ul class="services_menu">
-                        <div class="container">
-                            <li><a href="#">Websites</a></li>
-                            <li><a href="#">Web Apps</a></li>
-                            <li><a href="#">E-Commerce</a></li>
-                            <li><a href="#">Social Media Marketing</a></li>
-                        </div>
-                     
-                       </ul>
-                    </div>
+                        <li class="list-item"><span title="Neotet's Service Page" class="links service-links">Services</span></li>
                         <li class="list-item"><a href="#" title="Neotet's Projects Page"class="links" >Projects </a></li>
                         <li class="list-item"><a class="links" href="pages/proccess-page.html" title="Neotet's Process Page">Process </a></li>
                         <li class="list-item"><a class="links" href="#" title="Neotet's About Page">About us</a></li>
@@ -67,15 +55,7 @@
                     <span class="line"></span>
                 </div>
                 <ul class="header__menu-mobile flex" id="header-menu">
-                    <li id="mobile-service-list">
-                        <span  title="Neotet's Service Page">Services</span>
-                          <div class="links active">
-                            <a href="#">Websites</a>
-                            <a href="#">Web Apps</a>
-                            <a href="#">E-Commerce</a>
-                            <a href="#">Social Media Marketing</a>
-                          </div>
-                    </li>
+                    <li><span title="Neotet's Service Page" class="service-links">Services</span></li>
                     <li><a href="#" class="header_list-item" title="Neotet's Projects Page">Projects </a></li>
                     <li><a href="pages/proccess-page.html" class="header_list-item"
                             title="Neotet's Process Page">Process </a></li>
@@ -89,8 +69,25 @@
                   
                 </ul>
             </div>
+            
         </header>
-       
+        <div id="service-menu">
+            <div class="wrapper">
+                <div class="container">
+                    <button id="close-service-menu"><i class="fa-solid fa-circle-xmark"></i></button>
+                    <header>
+                        <h2>Services</h2>
+                        <p>Supercharge your digital presence with our digital services.</p>
+                    </header>
+                    <ul>
+                        <li><a href="">Websites</a></li>
+                        <li><a href="">Web Apps</a></li>
+                        <li><a href="">E-Commerce</a></li>
+                        <li><a href="">Social Media Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
     <section class="home flex">
         <div id="bg_stars"></div>
@@ -158,7 +155,7 @@
                         At Neotet, we don't just build websites, we craft immersive digital experiences that resonate with your audience. Our website design and development services are a fusion of creativity, technology, and strategic thinking. We are not just in the business of coding; we are in the business of turning dreams into digital reality.
                     </main>
                     <button>
-                        <a href="#" class="btn"><div class="text">View All Services <span class="icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                        <div class="btn service-links"><div class="text">View All Services </div><span class="icon"><i class="fa-solid fa-angle-right"></i></span></div>
                     </button>
                 </li>
                 <li class="service">
@@ -169,7 +166,7 @@
                         At Neotet, we're architects of dynamic and functional web applications. Our team specializes in transforming your business processes and ideas into seamless, interactive digital solutions.
                     </main>
                     <button>
-                        <a href="#" class="btn"><div class="text">View All Services <span class="icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                        <div class="btn service-links"><div class="text">View All Services </div><span class="icon"><i class="fa-solid fa-angle-right"></i></span></div>
                     </button>
                 </li>
                 <li class="service">
@@ -180,7 +177,7 @@
                         At Neotet, we understand that a stunning digital presence is only effective when it's seen by the right audience. That's where our expertise in SEO (Search Engine Optimization) and marketing comes into play – to elevate your brand, drive organic traffic, and foster meaningful connections with your target audience.
                     </main>
                     <button>
-                        <a href="#" class="btn"><div class="text">View All Services <span class="icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                        <div class="btn service-links"><div class="text">View All Services </div><span class="icon"><i class="fa-solid fa-angle-right"></i></span></div>
                     </button>
                 </li>
                 <li class="service">
@@ -191,7 +188,7 @@
                         At Neotet, we specialize in bringing your business online with seamless and tailored E-Commerce solutions. Our team crafts personalized online shops that not only showcase your products but elevate your entire digital retail experience. From user-centric design to secure transactions, we're here to turn your vision into a thriving online store.
                     </main>
                     <button>
-                        <a href="#" class="btn"><div class="text">View All Services</div> <span class="icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                        <div class="btn service-links"><div class="text">View All Services</div> <span class="icon"><i class="fa-solid fa-angle-right"></i></span></div>
                     </button>
                 </li>
             </ul>

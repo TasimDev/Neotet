@@ -149,7 +149,7 @@ button {
 .header.sticky .header__logo {
   color: #fff;
 }
-.header.sticky .header__menu .links {
+.header.sticky .header__menu #service-link, .header.sticky .header__menu .links {
   color: #fff;
 }
 .header.sticky .header__menu .list-item::after {
@@ -205,10 +205,11 @@ button {
   width: 50%;
   gap: 3rem;
 }
-.header__menu a {
+.header__menu .service-links, .header__menu a {
   color: rgb(0, 0, 0);
   font-weight: 700;
   font-size: 1rem;
+  cursor: pointer;
 }
 .header__menu li {
   padding: 8px 3px;
@@ -274,10 +275,11 @@ button {
   opacity: 0;
   transition: var(--transition);
 }
-.header__menu-mobile li a {
+.header__menu-mobile li .service-links, .header__menu-mobile li a {
   color: #fff;
   font-size: 1.3rem;
   font-weight: 600;
+  cursor: pointer;
 }
 .header__menu-mobile li.social {
   text-align: center;
@@ -286,66 +288,71 @@ button {
 .header__menu-mobile li.social p {
   color: rgb(128, 128, 128);
 }
-.header__menu-mobile #mobile-service-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.header__menu-mobile #mobile-service-list span {
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-.header__menu-mobile #mobile-service-list .links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  height: 0;
-  overflow: hidden;
-  pointer-events: none;
-  transition: all 0.3s ease-in-out;
-}
-.header__menu-mobile #mobile-service-list .links a {
-  font-size: 1.1rem;
-}
-.header__menu-mobile #mobile-service-list .links.active {
-  padding: 1rem 0rem;
-  pointer-events: all;
-  height: 100%;
-}
 .header__menu-mobile.active {
   transform: translateY(0);
   opacity: 1;
 }
-.header .services_dropdown_menu .services_menu {
-  opacity: 0;
-  pointer-events: none;
+
+#service-menu {
+  position: fixed;
+  top: 0;
+  right: -200%;
   width: 100%;
-  left: 0;
-  position: absolute;
+  height: 100%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+#service-menu.active {
+  right: 0;
+}
+#service-menu .wrapper {
+  background: #fff;
+  width: 30%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
-  border-bottom: 1px solid rgb(224, 224, 224);
+  box-shadow: -39px 0px 141px 0px rgba(0, 0, 0, 0.363);
+}
+#service-menu .wrapper .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+#service-menu .wrapper .container header {
+  font-size: 1.1rem;
+}
+#service-menu .wrapper .container header p {
+  color: rgb(128, 128, 128);
+}
+#service-menu .wrapper .container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#service-menu .wrapper .container ul li a {
+  font-size: 1.2rem;
+  color: rgb(128, 128, 128);
+  font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
-.header .services_dropdown_menu .services_menu .container {
-  display: flex;
-  padding: 1rem 0rem;
-  gap: 2rem;
+#service-menu .wrapper .container ul li:hover a {
+  color: rgb(17, 17, 17);
 }
-.header .services_dropdown_menu .services_menu:hover {
-  opacity: 1;
-  pointer-events: all;
-}
-.header .services_dropdown_menu > #service-link:hover + .services_menu {
-  opacity: 1;
-  pointer-events: all;
+#service-menu .wrapper .container #close-service-menu {
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  font-size: 1.6rem;
+  cursor: pointer;
 }
 
 /*==========HOME==========*/
@@ -522,12 +529,19 @@ button {
   width: 50%;
 }
 #services .container ul li button {
+  cursor: pointer;
   width: 25%;
 }
-#services .container ul li button a {
+#services .container ul li button .btn {
   color: rgb(17, 17, 17);
   font-weight: 500;
   font-size: 1.1rem;
+  display: flex;
+}
+#services .container ul li button .btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #about-page header {
@@ -1067,6 +1081,9 @@ button {
   }
   #contact-page #contact-names .container .first, #contact-page #contact-names .container .second {
     flex-direction: column;
+  }
+  #service-menu .wrapper {
+    width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
